@@ -1,0 +1,117 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd_meal_page {
+  @include padding;
+
+  .main_side {
+    @include main_side;
+    .category_box {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      .title {
+        color: black;
+        font-size: 14px;
+        margin-bottom: 0;
+        font-weight: bold;
+        padding-right: 10px;
+        border-right: 1px solid #00000080;
+      }
+      .list_category {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .each_cat {
+          margin-left: 30px;
+          padding: 7px 20px;
+          margin-bottom: 10px;
+          cursor: pointer;
+          border: 0.5px solid #70707060;
+          border-radius: 5px;
+          p {
+            margin: 0;
+            color: #00000080;
+          }
+          &.active {
+            border: 2px solid #ffcd36;
+            p {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    .cover_new_cat {
+      color: black;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $primary;
+      width: max-content;
+      margin-top: 40px;
+      width: 150px;
+      p {
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .intro_flex {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include mq(900px) {
+        flex-direction: column;
+      }
+      img {
+        width: 50%;
+        @include mq(900px) {
+          width: 100%;
+        }
+      }
+      .desc_box {
+        width: 40%;
+        @include mq(900px) {
+          width: 100%;
+          margin-top: 30px;
+        }
+      }
+      .bold {
+        font-size: 20px;
+        font-weight: 600px;
+        margin-bottom: 20px;
+      }
+      .story {
+        color: #00000080;
+        font-size: 14px;
+      }
+    }
+    .main_meal {
+      margin-top: 40px;
+      .desc {
+        font-size: 14px;
+        font-weight: 600;
+        color: #00000080;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .flex_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .pd_meal_card {
+      width: 23% !important;
+      margin-bottom: 20px;
+      @include mq(1100px) {
+        width: 32% !important;
+      }
+      @include mq(768px) {
+        width: 48% !important;
+      }
+      @include mq(500px) {
+        width: 100% !important;
+      }
+    }
+  }
+}

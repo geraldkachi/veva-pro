@@ -1,0 +1,29 @@
+@use "../../assets/styleUtils/index" as *;
+
+.phone_verification {
+  width: 100%;
+  margin-top: 20px;
+  p {
+    margin-bottom: 0;
+  }
+  .title_box {
+    p {
+      text-align: center;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .line {
+      width: 100px;
+      margin: auto;
+      border-bottom: 3px solid $primary;
+    }
+  }
+  .desc {
+    color: #535353;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}

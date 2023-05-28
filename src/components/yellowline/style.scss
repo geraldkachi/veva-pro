@@ -1,0 +1,7 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd_yellow_line {
+  width: 160px;
+  height: 2px;
+  background: $primary;
+}

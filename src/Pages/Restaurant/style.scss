@@ -1,0 +1,41 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd_restaurant {
+  @include padding;
+  .main_side {
+    @include main_side;
+    .banner {
+      width: 100%;
+      margin-top: 100px;
+      background-image: url("../../assets/icons/chef.png");
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .layer {
+        background: transparent
+          linear-gradient(180deg, #00000000 0%, #000000ac 100%) 0% 0% no-repeat
+          padding-box;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding-bottom: 60px;
+        p {
+          text-align: center;
+
+          font-size: 40px;
+          font-weight: 600;
+          color: white;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .restaurant_main_box {
+      margin-top: 50px;
+    }
+  }
+}

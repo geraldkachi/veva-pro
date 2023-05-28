@@ -1,0 +1,90 @@
+@use "../../../../assets/styleUtils/index" as *;
+.pd_featured {
+  margin-top: 80px !important;
+  @include mq(600px) {
+    margin-top: 70px !important;
+  }
+  .pd_meal_card {
+    @include mq(600px) {
+      width: unset;
+    }
+  }
+  .cover_meal {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    // .slick-slide {
+    //   margin: 0 10px !important;
+    // }
+    .filter_box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      justify-content: center;
+      .each_box {
+        margin-right: 20px;
+        cursor: pointer;
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          color: #8b8b8bd9;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          p {
+            color: black;
+          }
+          .line {
+            border-bottom: 3px solid $primary;
+          }
+        }
+      }
+    }
+    .arrow_box {
+      display: flex;
+      margin-top: 50px;
+      align-items: center;
+      .black_line {
+        width: 150px;
+        border-bottom: 3px solid black;
+        margin-right: 65px;
+      }
+      .round {
+        height: 30px;
+        width: 30px;
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .view_box {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+      .view {
+        background: $primary;
+        color: black;
+        padding: 10px 35px;
+      }
+    }
+  }
+}
+.slick-slider {
+  width: 100%;
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}

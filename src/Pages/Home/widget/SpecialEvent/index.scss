@@ -1,0 +1,44 @@
+@use "../../../../assets/styleUtils/index" as *;
+.special-events {
+  padding: 10rem 0rem;
+  margin-top: 5rem;
+  .overlay {
+    background-color: black;
+    top: 0;
+    right: 0;
+    width: 70%;
+    @include mq(600px) {
+      width: 100%;
+    }
+  }
+  .container {
+    .row {
+      .col {
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          .position-relative {
+            h1 {
+              font-size: 2rem !important;
+              margin-bottom: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .thumbnail {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../../../../assets/icons/choco.png);
+    height: 200%;
+    top: -31rem;
+    left: 0;
+    @include mq(800px) {
+      display: none;
+    }
+  }
+}

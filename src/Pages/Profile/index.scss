@@ -1,0 +1,66 @@
+#profile {
+  margin-top: 7rem;
+
+  .back-button {
+    border-radius: 50% !important;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .personal-security {
+    background-color: white;
+    border: 0.5px solid #70707060;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+
+    &.active {
+      color: black !important;
+      border: 2px solid #ffcd36;
+      font-weight: bold;
+    }
+  }
+
+  .password-wrapper,
+  .input-wrapper {
+    border: 1.5px solid #70707060;
+    border-radius: 5px;
+    // padding: 0.6rem 1.2rem;
+    .ant-input-affix-wrapper {
+      padding: 0.6rem 1.2rem;
+      display: flex !important;
+      align-items: center !important;
+      .ant-input-suffix {
+        height: 5px;
+      }
+    }
+  }
+
+  .input-wrapper {
+    // padding: 0.6rem 0rem;
+  }
+
+  .w-45 {
+    width: 45%;
+  }
+
+  .avatar {
+    width: 12rem;
+    height: 12rem;
+    min-width: 120px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-right: 1rem;
+    border: 2px solid #000;
+    .edit-avatar {
+      position: absolute;
+      top: 0rem;
+      right: 0.5rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50% !important;
+      background-color: #ffcd36;
+      font-size: 1.4rem;
+    }
+  }
+}

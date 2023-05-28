@@ -1,0 +1,239 @@
+@use "../../assets/styleUtils/index" as *;
+.pd_navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  z-index: 12;
+  padding: 20px 0px;
+  .cover_ham {
+    svg {
+      fill: white;
+    }
+  }
+  &.white_bg {
+    background: white;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 50px #0000000d;
+    .cover_ham {
+      svg {
+        fill: black;
+      }
+    }
+    .cover_nav {
+      .left_logo_side {
+        .logo_cover {
+          p {
+            color: black;
+          }
+        }
+        .btn_search {
+          background: #d0d0d0;
+          svg {
+            fill: black;
+          }
+          p {
+            color: #00000080;
+          }
+        }
+      }
+      .right_logo_side {
+        .contain_left {
+          .cover_button {
+            button {
+              &.sign {
+                background-color: $primary;
+                color: black;
+              }
+            }
+          }
+          .cover_loggedin {
+            .each_icon_box {
+              p {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cover_nav {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+
+    justify-content: space-between;
+    .left_logo_side {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include mq(900px) {
+        width: 100%;
+      }
+      .logo_cover {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img {
+          margin-right: 10px;
+          width: 44px;
+        }
+        p {
+          text-align: left;
+          letter-spacing: 0px;
+          color: #ffffff;
+          opacity: 1;
+          margin-bottom: 0;
+        }
+      }
+      .btn_search {
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        width: 250px;
+        // background-color: rgba($color: #ffffff2e, $alpha: 0.2);
+        background: #ffffff2e;
+        border-radius: 5px;
+        svg {
+          fill: white;
+        }
+        p {
+          font-size: 14px;
+          color: white;
+          margin-left: 20px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .right_logo_side {
+      width: 50%;
+      padding-left: 50px;
+      .contain_left {
+        display: flex;
+        padding: 0 5px;
+        justify-content: space-between;
+        .nav_list_side {
+          display: none;
+        }
+        .cover_button {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .vert_line {
+            margin: 0 15px;
+            width: 2px;
+            height: 30px;
+            background-color: black;
+          }
+          button {
+            width: 130px;
+            height: 44px;
+            &.sign {
+              background-color: black;
+              color: $primary;
+            }
+            &.log {
+              color: black;
+              width: unset;
+              height: unset;
+            }
+          }
+        }
+        .cover_loggedin {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span.number {
+            position: absolute;
+            top: -15px;
+            right: -8px;
+            background: #ff575a;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .each_icon_box {
+            display: flex;
+            position: relative;
+            align-items: center;
+            img {
+              width: 30px;
+            }
+            p {
+              font-size: 14px;
+              color: #ffffff;
+              margin-bottom: 0;
+              margin-left: 4px;
+            }
+
+            &.wallet {
+            }
+            &.cart {
+              p {
+                color: black;
+              }
+            }
+          }
+          .cover_other {
+            width: 55%;
+            display: flex;
+            align-items: center;
+
+            justify-content: space-between;
+            .vert_line {
+              //   margin: 0 15px;
+              width: 2px;
+              height: 30px;
+              background-color: black;
+            }
+            .about_user {
+              position: relative;
+              #notification {
+                top: 60px;
+              }
+              .cover_avatar {
+                display: flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+              }
+              .name {
+                font-size: 14px;
+                color: black;
+                margin-left: 5px;
+                margin-bottom: 0;
+              }
+              span.number {
+                top: -7px;
+              }
+            }
+          }
+        }
+      }
+      @include mq(900px) {
+        @include mob_nav;
+        &.nav-opened {
+          clip-path: inset(0 0 0 0);
+        }
+      }
+    }
+  }
+
+  .btn_search {
+    cursor: pointer;
+    @include mq(900px) {
+      display: none !important;
+    }
+  }
+}

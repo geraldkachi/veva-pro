@@ -1,0 +1,26 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd_section_title {
+  width: 100%;
+  p {
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .underline {
+    border-bottom: 5px solid #ffcd36;
+    width: 150px;
+  }
+  .sub_text {
+    font-size: 14px;
+    margin-top: 20px;
+    color: rgba($color: #000000, $alpha: 0.5);
+  }
+  &.center {
+    text-align: center;
+    .underline {
+      margin: auto;
+    }
+  }
+}

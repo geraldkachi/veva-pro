@@ -1,0 +1,27 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd_search_modal {
+  width: 70%;
+  margin: 50px auto;
+  .explain {
+    color: #00000080;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .filter_box {
+    display: flex;
+    .each_filter {
+      width: 120px;
+      border: 1px solid #707070;
+      margin-right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active {
+        border: 1px solid $primary;
+      }
+    }
+  }
+}

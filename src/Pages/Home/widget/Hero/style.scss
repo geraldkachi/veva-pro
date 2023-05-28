@@ -1,0 +1,208 @@
+@use "../../../../assets/styleUtils/index" as *;
+@font-face {
+  font-family: barber;
+  src: url("../../../../assets/fonts/Barbershop\ in\ Thailand.ttf");
+}
+.pd_hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 10px;
+  @include mq(900px) {
+    min-height: unset;
+  }
+  .split_bg {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    .black_side {
+      background: black;
+      width: 70%;
+      height: 100%;
+      @include mq(900px) {
+        width: 100%;
+      }
+    }
+    .yellow_side {
+      background: $primary;
+      width: 30%;
+      height: 100%;
+      @include mq(900px) {
+        display: none;
+      }
+    }
+  }
+  .main_side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    padding-top: 130px;
+    padding-left: 7.5%;
+    margin: auto;
+    @include mq(900px) {
+      flex-direction: column;
+      padding: 130px 7.5%;
+    }
+    .left_main {
+      width: 40%;
+      @include mq(900px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      p {
+        color: white;
+      }
+      .rest_about {
+        font-size: 45px;
+        margin: 30px 0 25px;
+        line-height: 70px;
+        font-family: barber;
+        @include mq(600px) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+      .desc {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 30px;
+        @include mq(600px) {
+          font-size: 12px;
+        }
+      }
+      .yellow_arrow {
+        a {
+          // width: 170px;
+          // height: 30px;
+          display: block;
+          width: max-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 48px;
+          text-align: center;
+          width: 200px;
+          background-color: $primary;
+          color: #000000;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 3px;
+        }
+        svg {
+          fill: $primary;
+        }
+      }
+      p.view {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+    .right_main {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      @include mq(900px) {
+        width: 100%;
+      }
+      .slick-track {
+        display: flex;
+      }
+      .slick-prev,
+      .slick-next {
+        display: none !important;
+      }
+      /* the slides */
+      .slick-slide {
+        margin: 0 10px !important;
+        // width: 500px !important;
+      }
+      .slick-list {
+        height: 450px;
+      }
+      .each_carousel {
+        height: 450px;
+        border-radius: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        cursor: pointer;
+
+        &.one {
+          background-image: url("../../../../assets/icons/oneimg.jpg");
+        }
+        &.two {
+          background-image: url("../../../../assets/icons/twoimg.jpg");
+        }
+        &.three {
+          background-image: url("../../../../assets/icons/threeimg.jpg");
+        }
+
+        // &.one {
+        //   background-image: url("../../../../assets/icons/bg_home.png");
+        // }
+        // &.two {
+        //   background-image: url("../../../../assets/icons/bg_home2.png");
+        // }
+        // &.three {
+        //   background-image: url("../../../../assets/icons/bg_home.png");
+        // }
+        // &.four {
+        //   background-image: url("../../../../assets/icons/bg_home2.png");
+        // }
+        // &.five {
+        //   background-image: url("../../../../assets/icons/bg_home.png");
+        // }
+        // &.six {
+        //   background-image: url("../../../../assets/icons/bg_home2.png");
+        // }
+        p {
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 600;
+          position: absolute;
+          color: rgba($color: #ffffff, $alpha: 0.8);
+          position: relative;
+        }
+      }
+      .pd_yellow_line {
+        margin-top: 60px;
+      }
+    }
+  }
+  .icon_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    @include mq(900px) {
+      display: none;
+    }
+    .straight_line {
+      height: 100px;
+      border-left: 1px dashed $primary;
+      margin-bottom: 10px;
+    }
+    .icon_box_small {
+      display: flex;
+      flex-direction: column;
+      .each_icon {
+        margin-bottom: 6px;
+
+        svg {
+          fill: $primary;
+          width: 16px;
+        }
+      }
+    }
+  }
+}

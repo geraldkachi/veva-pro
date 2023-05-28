@@ -1,0 +1,66 @@
+.ve-slick-carousel .slick-arrow {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: 1px solid #000000;
+	color: black;
+}
+
+.ve-slick-carousel .slick-prev {
+	left: 0px;
+}
+
+.ve-slick-carousel .slick-next,
+.ve-slick-carousel {
+	right: 0px;
+}
+
+.ve-slick-carousel .slick-next:before,
+.ve-slick-carousel .slick-prev:before {
+	direction: ltr;
+	display: inline-block;
+	font-family: 'Material Icons';
+	font-size: 24px;
+	color: black;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 1;
+	text-transform: none;
+	white-space: nowrap;
+	word-wrap: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-feature-settings: 'liga';
+}
+
+.ve-slick-carousel .slick-prev:before {
+	content: 'chevron_left';
+}
+
+.ve-slick-carousel .slick-next:before {
+	content: 'chevron_right';
+}
+
+.ve-slick-carousel .slick-list {
+	padding-top: 3rem;
+}
+
+.ve-slick-carousel .slick-dots li button {
+	border-radius: 50%;
+	background-color: #e6e6e6;
+	overflow: hidden;
+	width: 0.1rem;
+	height: 0.1rem;
+
+	&:before {
+		content: '';
+	}
+}
+
+.ve-slick-carousel .slick-dots .slick-active button {
+	background-color: black;
+}
+
+.ve-slick-carousel .slick-dots {
+	bottom: -7rem;
+}

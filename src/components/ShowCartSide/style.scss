@@ -1,0 +1,64 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd_show_cart_side {
+  width: 100%;
+  margin: 20px 0;
+  p {
+    margin-bottom: 0;
+  }
+  .delBtn {
+    cursor: pointer;
+  }
+  .each_cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    p {
+      font-size: 14px;
+      color: black;
+    }
+    .name {
+      width: 150px;
+    }
+    .cover_count {
+      display: flex;
+      align-items: center;
+      .count {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .quantity {
+        font-weight: 600;
+        margin: 0 20px;
+      }
+    }
+  }
+  .sub_total {
+    margin-top: 30px;
+    .bold {
+      font-weight: 600;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+    .faint {
+      font-size: 14px;
+    }
+  }
+  .total_amount {
+    margin-top: 30px;
+    border-top: 3px solid $primary;
+    padding-top: 10px;
+    width: max-content;
+    p {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}

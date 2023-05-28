@@ -1,0 +1,81 @@
+@use "../../assets/styleUtils/index" as *;
+.pd_checkout_modal {
+  width: 100%;
+  form {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    @include mq(900px) {
+      flex-direction: column;
+    }
+
+    .check_side {
+      display: flex;
+      align-items: center;
+      svg {
+        padding: 0;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+    }
+  }
+  .left_form {
+    width: 47%;
+    @include mq(900px) {
+      width: 100%;
+    }
+  }
+  .right_form {
+    width: 47%;
+    @include mq(900px) {
+      width: 100%;
+    }
+  }
+  .radio_side {
+    .label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .pay_box {
+      display: flex;
+      flex-wrap: wrap;
+
+      .each_box {
+        border: 1px solid #7070704d;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-right: 15px;
+        @include mq(600px) {
+          margin-bottom: 10px;
+        }
+        &:hover {
+          background-color: $primary;
+        }
+        &.active {
+          background-color: $primary;
+        }
+        &.disabled {
+          background: rgba($color: #000000, $alpha: 0.1);
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          width: 24px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

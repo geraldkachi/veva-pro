@@ -1,0 +1,47 @@
+@use "../../assets/styleUtils/index" as *;
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  height: 46px;
+  color: black !important;
+  background-color: #ffcd36 !important;
+  margin: 10px 0;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 31px;
+
+  &.disabled {
+    opacity: 0.7;
+  }
+  &.icon {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 6px;
+    }
+  }
+}
+div.spin {
+  width: 20px;
+  height: 20px;
+  color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s infinite linear;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

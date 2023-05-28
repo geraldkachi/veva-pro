@@ -1,0 +1,101 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(23, 57, 99, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 50;
+  overflow: hidden;
+  @include flex();
+  align-items: unset;
+  .popBox {
+    @include modalLay;
+    position: relative;
+
+    height: 90vh;
+    margin: unset;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 45px 140px;
+    @include mq(900px) {
+      padding: 45px 20px;
+    }
+    .top_side {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .img_cover {
+        display: flex;
+        align-items: center;
+        text-decoration: none !important;
+        img {
+          width: 50px;
+          margin-right: 5px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 0;
+          color: black;
+        }
+      }
+      svg {
+        cursor: pointer;
+      }
+      .title_cover {
+        width: 35%;
+      }
+      .title {
+        font-weight: 600;
+        margin: 0;
+        font-size: 16px;
+        width: max-content;
+        color: black;
+        border-bottom: 4px solid $primary;
+      }
+    }
+
+    .btn-wrap {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        min-width: 118px;
+      }
+    }
+
+    .input-icon-wrap,
+    .select-mui {
+      background-color: white;
+    }
+  }
+  .msg-modal {
+    min-height: 380px;
+    .icon-wrap {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      @include flex();
+      svg {
+        font-size: 2.5rem;
+      }
+    }
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    .title {
+      font-size: 1.2rem;
+      margin: 0;
+      font-weight: 600;
+    }
+    button {
+      margin-top: 1rem;
+    }
+  }
+}

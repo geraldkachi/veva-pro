@@ -1,0 +1,40 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd_login_modal {
+  width: 30%;
+  margin: auto;
+  margin-top: 50px;
+  @include mq(900px) {
+    width: 100%;
+  }
+
+  &.sign {
+    margin-top: 20px;
+  }
+  .flex_last {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      margin-top: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .last_text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #00000080;
+    &.first {
+      margin-bottom: 30px;
+    }
+    a,
+    span,
+    .likea {
+      color: black;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}

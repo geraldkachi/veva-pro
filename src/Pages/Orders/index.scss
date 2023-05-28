@@ -1,0 +1,57 @@
+@use "../../assets/styleUtils/index" as *;
+#orders {
+  margin-top: 7rem;
+
+  .back-button {
+    border-radius: 50% !important;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  .ant-select {
+    width: 180px;
+  }
+  label {
+    margin-right: 10px;
+  }
+  //   .ant-picker {
+  //     margin-right: 10px;
+  //   }
+  input {
+    border: none !important;
+  }
+  .table > :not(:first-child) {
+    border-top: none !important;
+  }
+  .over_flow_table {
+    width: 100%;
+    overflow-x: auto;
+    @include webkit;
+  }
+  .ant-pagination {
+    margin-top: 20px !important;
+  }
+  table {
+    margin-top: 2rem;
+    min-width: 1000px;
+    thead th {
+      background: #f7f7f7;
+      border: 0;
+      font-weight: 400;
+      padding: 15px;
+    }
+
+    td {
+      border: 0;
+      padding: 15px;
+      font-weight: bold;
+    }
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  .h-divider-primary {
+    width: 6rem !important;
+  }
+}

@@ -1,0 +1,43 @@
+:root {
+  --primary: #ffcd36;
+  --whiteClr: #fff;
+  --secondary: #f7fafc;
+  --greenClr: #66cb9f;
+  --yellowClr: #ffcd1e;
+  --redClr: #ff7171;
+  --red-100: red;
+  --blackClr: #000000;
+  --text60: #718096;
+  --whiteClr: #ffffff;
+  --inputBorder: #dfe1e6;
+  --inputPlaceholder: #b5b5bd;
+  --greenApproval: #039487;
+}
+
+// scss hash maps to generate helper classes
+$colors: (
+  primary: var(--primary),
+  whiteClr: var(--whiteClr),
+  blackClr: var(--black),
+  yellowClr: var(--yellowClr),
+  greenClr: var(--greenClr),
+  secondary: var(--secondary),
+  redClr: var(--redClr),
+  inputBorder: #dfe1e6,
+  iconColor: #cdcfce,
+  inputPlaceholder: var(--inputPlaceholder),
+) !default;
+
+// looping through the scss hash map to generate utility classes...
+// to use assign classname of .clr-{color} to give the text color same for background with .bg-{color} and same for svg with .fill-{color}
+@each $color, $value in $colors {
+  .clr-#{$color} {
+    color: $value;
+  }
+  .bg-#{$color} {
+    background-color: $value;
+  }
+  .fill-#{$color} {
+    fill: $value;
+  }
+}

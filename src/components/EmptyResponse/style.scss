@@ -1,0 +1,37 @@
+@use "../../assets/styleUtils/index" as *;
+
+.empty-response-pg {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  height: 100%;
+  img {
+    max-width: 162px;
+    max-height: 168px;
+  }
+  p {
+    font-size: 0.8rem;
+    color: var(--text-100);
+    margin: 1.5rem auto;
+    text-align: center;
+    max-width: 350px;
+  }
+  //   a {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     text-transform: unset;
+  //     margin: auto;
+  //     font-weight: 500;
+  //     font-size: 15px;
+  //     line-height: 24px;
+  //     color: white;
+  //     background: var(--primary);
+  //     width: 157px;
+  //     height: 40px;
+  //     border-radius: 8px;
+  //   }
+}

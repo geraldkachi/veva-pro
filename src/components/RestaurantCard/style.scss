@@ -1,0 +1,37 @@
+@use "../../assets/styleUtils/index" as *;
+
+.pd_restaurant_card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 119px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px #0000000f;
+  background: white;
+  img {
+    height: 100%;
+    width: 120px;
+  }
+  .right_end {
+    padding: 10px;
+    p.name {
+      font-size: 14px;
+      font-weight: 600;
+      color: black;
+      margin-bottom: 10px;
+    }
+    p.desc {
+      color: rgba($color: #000000, $alpha: 0.6);
+      margin-bottom: 10px;
+    }
+    .rate_box {
+      display: flex;
+      align-items: center;
+      .rate_number {
+        color: #000000;
+        margin-right: 5px;
+      }
+    }
+  }
+}

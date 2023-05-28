@@ -1,0 +1,23 @@
+@use "../../assets/styleUtils/index" as *;
+
+.back_arrow_box {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  .page_link {
+    margin-bottom: 0;
+    span {
+      font-weight: 600;
+    }
+  }
+  .cover_icon {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: $primary;
+    margin-right: 20px;
+    justify-content: center;
+  }
+}

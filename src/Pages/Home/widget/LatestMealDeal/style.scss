@@ -1,0 +1,13 @@
+@use "../../../../assets/styleUtils/index" as *;
+
+.pd_latest_page {
+  width: 85%;
+  margin: auto;
+  margin-top: 150px;
+  @include mq(600px) {
+    display: none;
+  }
+  .view_box {
+    margin-top: 120px !important;
+  }
+}

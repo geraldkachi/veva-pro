@@ -1,0 +1,13 @@
+@use "../../assets/styleUtils/index" as *;
+.cover_ham {
+  display: none;
+
+  width: 100%;
+  justify-content: flex-end;
+  padding: 10px;
+  @include mq(900px) {
+    display: flex;
+    position: relative;
+    z-index: 30;
+  }
+}

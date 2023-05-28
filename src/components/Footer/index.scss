@@ -1,0 +1,45 @@
+@use "../../assets/styleUtils/index" as *;
+#footer {
+  .content {
+    margin-top: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    @include mq(600px) {
+      margin-top: 5rem;
+    }
+  }
+
+  .app-wrapper {
+    width: 5rem;
+    height: 5rem;
+    // padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff31;
+  }
+
+  .va-text-secondary2 {
+    color: #ffffffc7 !important;
+  }
+
+  .copyright {
+    text-align: center;
+    margin: 0;
+    color: #ffffff31;
+    padding-bottom: 2rem;
+  }
+  .vevas {
+    font-size: 14px !important;
+  }
+  .icono {
+    margin-top: 20px;
+    a {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "./index" as *;
+.layout {
+  width: 100%;
+  .inner {
+    width: 95%;
+    margin: auto;
+    max-width: 1150px;
+  }
+}
+
+.cancel {
+  margin-top: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-decoration-line: underline;
+  box-shadow: none !important;
+  color: #0052bd;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}

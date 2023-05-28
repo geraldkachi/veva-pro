@@ -1,0 +1,21 @@
+body {
+}
+@font-face {
+  font-family: norms;
+  src: url("./assets/fonts/TT\ Norms\ Pro\ Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: norms;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+a {
+  text-decoration: none !important;
+}

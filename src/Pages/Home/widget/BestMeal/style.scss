@@ -1,0 +1,44 @@
+@use "../../../../assets/styleUtils/index" as *;
+
+.pd_best_meal {
+  margin: auto;
+  margin-top: 70px;
+  width: 85%;
+  .cover_best_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.pd_each_best_meal {
+  width: 29%;
+  border-radius: 20px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  .dark {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    p {
+      color: white;
+      font-size: 16px;
+      font-size: 600;
+    }
+  }
+  @include mq(768px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
